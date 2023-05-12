@@ -1,70 +1,166 @@
 
 body{
-	background:  linear-gradient(to bottom, #C35345 0%, #27736b 90%);
-	height: 1000px;
+	background:  linear-gradient(to bottom, #27736b 0%, #C35345 90%);
+	height: 800px;
 	color: white;
 	font-family: 'Ysabeau', sans-serif;
-
 }
+
+
+
+
 
 .container{
-	margin: 5px auto 0;
-	border: 0.5px solid white;
-	width: 620px;
+	border-radius: 7px;
+	margin: 0 auto;
+	width: 550px;
 	box-sizing: border-box;
-	padding: 0 15px 0;
-}
-
-.container div{
-	border: 0.5px solid white;
-	margin: 15px 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 
 
 
-#info{
-	display: block;
-	background: rgba(187, 211, 124, 0.5);
+
+.header{
+	/*border: 1px solid white;*/
+	display: flex;
+	justify-content: space-between;
+	background: #212121;
 }
+
+.header div{
+	padding: 12px;
+	
+}
+
+.Stream_finished p{
+	margin: 4px 0 0;
+}
+
+
+
+
+
+.main{
+	margin: 0 auto;
+	background: #000000;
+
+	display: grid;
+	font-size: 1em;
+	grid-template-areas: 
+	"g-1 g-1 g-1 "
+	"g-2 g-3 g-4"
+	"g-5 . .";	
+	
+	grid-template-rows: 2.5fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.g-1{
+	grid-area: g-1;
+
+}
+.g-2{
+	grid-area: g-2;
+	padding-left: 25px;
+	border-right: 0.5px solid white;
+}
+.g-3{
+	grid-area: g-3;
+	text-align:center;
+	border-right: 0.5px solid white;
+}
+.g-4{
+	grid-area: g-4;
+	text-align:center;
+}
+.g-5{
+	grid-area: g-5;
+	padding-left: 25px;
+	font-size: 0.7em;
+}
+
+
+
+
 
 
 
 
 .grids{
+	background: #212121;
 	display: grid;
-	font-size: 1.1em;
-	grid-template-areas:
-	"1 2 3"
-	"4 5 6";
+	font-size: 0.8em;
+	grid-template-areas: 
+	"one  two  three"
+	"four five six";
+	grid-template-rows: 80px;
+	letter-spacing: 0.2px;
+	padding-top: 10px;
 }
 
-.grid1{
-	grid-area: 1;
-	max-width: 19px;
+.grids div{
+	text-align: center;
+}
+
+.grids p{
+	margin: 7px 0;
+}
+
+.grid-1{
+	grid-area: one;
 }
 
 .grid-2{
-	grid-area: 2;
-	width: 190px;
+	grid-area: two;
 }
 
 .grid-3{
-	grid-area: 3;
-	width: 190px;
+	grid-area: three;
 }
 
 .grid-4{
-	grid-area: 4;
+	grid-area: four;
 }
 
 .grid-5{
-	grid-area: 5;
+	grid-area: five;
 }
 
 .grid-6{
-	grid-area: 6;
+	grid-area: six;
+}
+
+.bigger-letters{
+	font-size: 1.7em;
 }
 
 
+
+
+
+.footer{
+	background: #212121;
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px 0;
+}
+
+.footer div{
+	margin-right: 8px;
+	padding: 10px;
+}
+
+.dismiss{
+	color: #a0a0a0;
+}
+
+.edit_in{
+	background: rgba(62, 166, 255, 0.9);
+	border-radius: 3px;
+	color: black;
+}
 
